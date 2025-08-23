@@ -1,0 +1,64 @@
+.header {
+  padding-top: 26px;
+  padding-bottom: 36px;
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+    border-bottom: var(--border);
+  }
+
+  &__logo {
+    max-height: 36px;
+  }
+
+  &__title {
+    margin-left: 23px;
+    color: #434a5c;
+  }
+
+  &__connection {
+    display: flex;
+    column-gap: 18px;
+    margin-left: auto;
+    font-style: normal;
+  }
+
+  &__connection-link {
+    @include hover {
+      opacity: 0.8;
+    }
+
+    font-weight: 500;
+    text-decoration: underline;
+    color: #576698;
+  }
+
+  &__connection-tel {
+    @include hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu-list {
+    display: flex;
+    column-gap: 18px;
+  }
+
+  &__menu-link {
+    @include hover {
+      color: var(--color-dark);
+      text-decoration: underline;
+    }
+
+    font-weight: 500;
+    color: var(--color-gray);
+  }
+}
