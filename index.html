@@ -17,13 +17,12 @@
                     </svg>
                 </a>
                 <span class="header__title">твой лучший курорт</span>
-                <address class="header__connection">
+                <address class="header__connection hidden-mobile">
                     <a class="header__connection-link" href="tel:88007703030">Обратная связь</a>
                     <a class="header__connection-tel" href="tel:88007703030">8 800 770 30 30</a>
                 </address>
-                <button class="header__button-menu burger--button visible-mobile" onclick="mobileOverlay.showModal()" type="button">
+                <button class="header__button-menu burger-button visible-mobile" onclick="mobileOverlay.showModal()" type="button">
                     <span class="visually-hidden">Open navigation menu</span>
-                    open
                 </button>
             </div>
             <nav class="header__menu hidden-mobile">
@@ -56,43 +55,69 @@
             </nav>
         </div>
     </header>
-    <main></main>
+
+    <main>
+        <section class="section container">
+            <div class="hero">
+                <h2 class="visually-hidden ">Beautiful mountain peaks with sunlight illuminating during sunset</h2>
+            </div>
+        </section>
+
+        <section class="section section--padding-entertainment container">
+            <header class="section__header">
+                <h1 class="section__header-main-title">Отдыхай на курорте Синий луг</h1>
+                <h2 class="section__header-title-section">Развлечения</h2>
+            </header>
+            <div class="entertainment grid">
+                <ul class="list-reset">
+                    <li>
+                        <img src="./images/images/entertainment/sport-1-image.webp" alt="">
+                        <h3>Спортивные развлечения</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer></footer>
     
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
         <form class="mobile-overlay__close-button-wrapper" method="dialog">
             <button class="mobile-overlay__close-button cross-button" type="submit">
                 <span class="visually-hidden">Close navigation menu</span>
-                Close
             </button>
         </form>
 
         <div class="mobile-overlay__body">
+            <div class="mobile-overlay__connection">
+                <a class="header__connection-link" href="tel:88007703030">Обратная связь</a>
+                <a class="header__connection-tel" href="tel:88007703030">8 800 770 30 30</a>
+           </div>
             <nav class="mobile-overlay__menu">
-                <ul  lass="mobile-overlay__list list-reset">
-                    <li  lass="mobile-overlay__item">
-                        <a  lass="mobile-overlay__link" href="#">Курорт</a>
+                <ul  class="mobile-overlay__menu-list list-reset">
+                    <li  lass="mobile-overlay__menu-item">
+                        <a  lass="mobile-overlay__menu-link" href="#">Курорт</a>
                     </li>
-                    <li  lass="mobile-overlay__item">
-                        <a lass="mobile-overlay__link" href="#">Чем заняться</a>
+                    <li  lass="mobile-overlay__menu-item">
+                        <a lass="mobile-overlay__menu-link" href="#">Чем заняться</a>
                     </li>
-                    <li  lass="mobile-overlay__item">
-                        <a  lass="mobile-overlay__link" href="#">Купить онлайн</a>
+                    <li  lass="mobile-overlay__menu-item">
+                        <a  lass="mobile-overlay__menu-link" href="#">Купить онлайн</a>
                     </li>
-                    <li  lass="mobile-overlay__item">
-                        <a  lass="mobile-overlay__link" href="#">Афиша мероприятий</a>
+                    <li  lass="mobile-overlay__menu-item">
+                        <a  lass="mobile-overlay__menu-link" href="#">Афиша мероприятий</a>
                     </li>
-                    <li  lass="mobile-overlay__item">
-                        <a  lass="mobile-overlay__link" href="#">Проживание</a>
+                    <li  lass="mobile-overlay__menu-item">
+                        <a  lass="mobile-overlay__menu-link" href="#">Проживание</a>
                     </li>
-                    <li  lass="mobile-overlay__item">
-                        <a  lass="mobile-overlay__link" href="#">Программа лояльности</a>
+                    <li  lass="mobile-overlay__menu-item">
+                        <a  lass="mobile-overlay__menu-link" href="#">Программа лояльности</a>
                     </li>
-                    <li  lass="mobile-overlay__item">
-                        <a  lass="mobile-overlay__link" href="#">Для бизнеса</a>
+                    <li  lass="mobile-overlay__menu-item">
+                        <a  lass="mobile-overlay__menu-link" href="#">Для бизнеса</a>
                     </li>
                 </ul>
             </nav>
+            
         </div>
     </dialog>
 </body>

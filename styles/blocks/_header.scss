@@ -1,21 +1,43 @@
 .header {
   padding-top: 26px;
   padding-bottom: 36px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
+  @include mobile {
+    padding-bottom: 14px;
+  }
+
   &__info {
     display: flex;
     align-items: flex-end;
     padding-bottom: 32px;
     margin-bottom: 24px;
     border-bottom: var(--border);
+
+    @include mobile {
+      padding-bottom: 14px;
+      margin-bottom: 0;
+    }
   }
 
   &__logo {
     max-height: 36px;
+
+    @include mobile {
+      max-width: 173px;
+    }
   }
 
   &__title {
     margin-left: 23px;
     color: #434a5c;
+
+    @include mobile-s {
+      display: none;
+    }
   }
 
   &__connection {
@@ -45,6 +67,12 @@
   &__menu {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+      column-gap: 70px;
+      row-gap: 10px;
+    }
   }
 
   &__menu-list {
@@ -55,10 +83,33 @@
   &__menu-link {
     @include hover {
       color: var(--color-dark);
-      text-decoration: underline;
+
+      &::after {
+        width: 100%;
+      }
     }
 
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 25px;
     font-weight: 500;
     color: var(--color-gray);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50%;
+      width: 0;
+      height: 1px;
+      transition-duration: inherit;
+      background-color: var(--color-dark);
+    }
+
+    @include tablet {
+      height: 20px;
+    }
   }
 }
