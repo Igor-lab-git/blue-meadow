@@ -3,9 +3,82 @@
 
   &--bg-image {
     width: 100%;
-    aspect-ratio: 555/600;
-    max-width: 555px;
+    min-width: 318px;
+    padding-top: 490px;
+    padding-left: 34px;
+    padding-bottom: 25px;
     background: url("../../images/images/apartments/apartments-image.webp")
       center/cover no-repeat;
+
+    @include tablet {
+    }
+  }
+
+  &__body--book {
+    max-width: 283px;
+  }
+
+  &__body--pick-up {
+    max-width: 205px;
+  }
+
+  &__body--more-details {
+    max-width: 262px;
+    & button {
+      margin-right: 12px;
+    }
+  }
+
+  &--second,
+  &--third {
+    min-width: 318px;
+    width: 100%;
+    max-height: 285px;
+    height: 100%;
+  }
+
+  &--second {
+    padding-top: 84px;
+    padding-left: 73px;
+    padding-bottom: 32px;
+
+    @include tablet {
+      padding-top: 60px;
+    padding-left: 43px;
+    }
+  }
+
+  &--third {
+    padding-top: 65px;
+    padding-left: 73px;
+    padding-bottom: 27px;
+
+    @include tablet {
+      padding-top: 45px;
+    padding-left: 43px;
+    }
+  }
+
+  &__title {
+    line-height: 1.28;
+
+    &--light {
+      margin-bottom: 24px;
+      color: var(--color-light);
+    }
+
+    &--pick-up {
+      margin-bottom: 28px;
+    }
+
+    &--more-details {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__dexcription {
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
   }
 }

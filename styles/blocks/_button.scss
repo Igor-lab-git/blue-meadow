@@ -1,19 +1,51 @@
 .button {
-    @include flex-center(true);
+  @include flex-center(true);
 
-    height: var(--button-heigth);
-    padding: 5px 13px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    text-transform: uppercase;
+  height: var(--button-heigth);
+  padding: 5px 13px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: var(--color-brown-alt);
+  border-radius: var(--border-radius);
+  background-color: var(--color-brown);
+
+  // @include hover {
+  //   border: 1px solid var(--color-brown-alt);
+  //   background-color: transparent;
+  //   color: var(--color-brown-alt);
+  // }
+
+  &--link-ligth {
+    margin-left: 10px;
+    background: transparent;
     color: var(--color-brown-alt);
-    border-radius: var(--border-radius);
-    background-color: var(--color-brown);
+    border: 1px solid var(--color-brown-alt);
 
     @include hover {
-        border: 1px solid var(--color-brown-alt);
-        background-color: transparent;
-        color: var(--color-brown-alt);
+      color: var(--color-brown-alt);
+      background-color: var(--color-brown);
+      border: none;
     }
+  }
+
+  &--link {
+    color: var(--color-brown);
+    background: transparent;
+    border: 1px solid var(--color-brown);
+
+    //   @include hover {
+    //   border: 1px solid var(--color-brown-alt);
+    //   background-color: transparent;
+    //   color: var(--color-brown-alt);
+    // }
+  }
+
+  &--arrow {
+    position: relative;
+    width: 144px;
+  }
+
+ 
 }

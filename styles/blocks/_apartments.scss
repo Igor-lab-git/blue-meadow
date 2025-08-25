@@ -1,0 +1,33 @@
+.apartments {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+     @include middle {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; 
+
+      & > * {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+      }
+    }
+  }
+
+  &__grid--first {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+  }
+
+  &__grid--second {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  &__grid--third {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
