@@ -1,0 +1,11 @@
+.apartments-card {
+  background-color: var(--color-bg-gray);
+
+  &--bg-image {
+    width: 100%;
+    aspect-ratio: 555/600;
+    max-width: 555px;
+    background: url("../../images/images/apartments/apartments-image.webp")
+      center/cover no-repeat;
+  }
+}

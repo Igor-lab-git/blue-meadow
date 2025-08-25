@@ -1,20 +1,8 @@
 .hero {
-  position: relative;
-  margin-bottom: 25px;
   width: 100%;
   aspect-ratio: 1140/595;
   max-width: 1140px;
 
   background: url("../../images/images/hero/mountain-bg-hero.webp") center/cover
     no-repeat;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     bottom: -25px;
-//     left: 0;
-//     width: 100%;
-//     height: 1px;
-//     background-color: var(--color-gray);
-//   }
 }

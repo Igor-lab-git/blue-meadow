@@ -1,0 +1,19 @@
+.button {
+    @include flex-center(true);
+
+    height: var(--button-heigth);
+    padding: 5px 13px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    text-transform: uppercase;
+    color: var(--color-brown-alt);
+    border-radius: var(--border-radius);
+    background-color: var(--color-brown);
+
+    @include hover {
+        border: 1px solid var(--color-brown-alt);
+        background-color: transparent;
+        color: var(--color-brown-alt);
+    }
+}

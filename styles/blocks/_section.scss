@@ -1,26 +1,44 @@
 .section {
   position: relative;
 
-  &--padding-entertainment {
-    padding-block: 27px 92px;
+  &--padding-top-entertainment {
+    padding-top: 27px;
+
+    @include mobile {
+      padding-top: 14px;
+    }
   }
 
   &__header {
     &-main-title {
-      line-height: 1.3;
+      line-height: 1.28;
       max-width: 735px;
+      text-transform: uppercase;
+
+      @include mobile {
+        margin-bottom: 27px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 33px;
+
+      @include mobile {
+        margin-bottom: 27px;
+      }
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1140px;
-    max-width: 100%; /* На маленьких экранах займет всю ширину */
-    height: 1px;
-    background-color: var(--color-gray);
+  &__body {
+    padding-bottom: 25px;
+    border-bottom: var(--border);
+
+    &--padding-entertainment {
+      padding-bottom: 92px;
+
+      @include mobile {
+        padding-bottom: 27px;
+      }
+    }
   }
 }
