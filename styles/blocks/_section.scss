@@ -1,11 +1,19 @@
 .section {
-  position: relative;
+  // position: relative;
 
   &--padding-top-entertainment {
     padding-top: 27px;
 
     @include mobile {
       padding-top: 14px;
+    }
+  }
+
+  &--padding-top-apartments {
+    padding-top: 67px;
+
+    @include mobile {
+      padding-top: 28px;
     }
   }
 
@@ -39,6 +47,14 @@
 
       @include mobile {
         padding-bottom: 27px;
+      }
+    }
+
+    &--padding-apartments {
+      padding-bottom: 75px;
+
+      @include mobile {
+        padding-bottom: 38px;
       }
     }
   }

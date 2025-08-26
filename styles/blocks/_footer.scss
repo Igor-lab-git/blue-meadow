@@ -1,0 +1,55 @@
+.footer {
+  padding-block: 56px 70px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    @include middle {
+      flex-wrap: wrap;
+      row-gap: 42px;
+    }
+  }
+
+  &__connection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    max-width: 247px;
+
+    & a {
+      text-decoration: underline;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  &__text {
+    font-style: normal;
+    color: var(--color-text);
+
+    &--description {
+      min-width: 311px;
+      max-width: 340px;
+    }
+
+    &--link {
+      transition-duration: var(--transition-duration);
+      @include hover {
+        text-decoration: underline;
+        color: var(--color-dark);
+      }
+    }
+  }
+}

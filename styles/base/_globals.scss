@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  @include fluid-text(14, 14);
+  @include fluid-text(14, 12);
 
   font-family: var(--font-family-base);
   font-weight: 400;

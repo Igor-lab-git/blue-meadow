@@ -11,12 +11,6 @@
   border-radius: var(--border-radius);
   background-color: var(--color-brown);
 
-  // @include hover {
-  //   border: 1px solid var(--color-brown-alt);
-  //   background-color: transparent;
-  //   color: var(--color-brown-alt);
-  // }
-
   &--link-ligth {
     margin-left: 10px;
     background: transparent;
@@ -35,17 +29,56 @@
     background: transparent;
     border: 1px solid var(--color-brown);
 
-    //   @include hover {
-    //   border: 1px solid var(--color-brown-alt);
-    //   background-color: transparent;
-    //   color: var(--color-brown-alt);
-    // }
+    @include hover {
+      border: 1px solid var(--color-brown);
+      background-color: var(--color-brown);
+      color: var(--color-brown-alt);
+    }
   }
 
   &--arrow {
     position: relative;
-    width: 144px;
-  }
+    column-gap: 10px;
+    display: inline-flex;
 
- 
+    & span {
+      position: relative;
+      content: "";
+      width: 26px;
+      height: 1px;
+      background-color: var(--color-brown);
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 1px;
+        top: -2px;
+        left: 21px;
+        rotate: 45deg;
+        background-color: var(--color-brown);
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 1px;
+        top: 2px;
+        left: 21px;
+        rotate: -45deg;
+        background-color: var(--color-brown);
+      }
+    }
+    @include hover {
+      & span {
+        background-color: var(--color-brown-alt);
+
+        &::after,
+        &::before {
+          background-color: var(--color-brown-alt);
+        }
+      }
+    }
+  }
 }
