@@ -310,42 +310,42 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Medium.woff2") format("woff2");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Roboto-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Bold.woff2") format("woff2");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -819,7 +819,7 @@ h4 {
   width: 100%;
   aspect-ratio: 1140/595;
   max-width: 1140px;
-  background: url("../../images/images/hero/mountain-bg-hero.webp") center/cover no-repeat;
+  background: url("../images/images/hero/mountain-bg-hero.webp") center/cover no-repeat;
 }
 
 .grid {
@@ -1037,7 +1037,7 @@ h4 {
   padding-top: 490px;
   padding-left: 34px;
   padding-bottom: 25px;
-  background: url("../../images/images/apartments/apartments-image.webp") center/cover no-repeat;
+  background: url("../images/images/apartments/apartments-image.webp") center/cover no-repeat;
 }
 @media (max-width: 480px) {
   .apartments-card--bg-image {
